@@ -3,29 +3,43 @@ from datetime import date
 korisnici = []
 kategorije = []
 prodaje = []
+osobne_iskaznice = []
+
+broj_iskaznica= int(input('Unesite broj osobnih iskaznica: '))
+for i in range(1, broj_iskaznica+1):
+    osobna_iskaznica = {}
+    osobna_iskaznica["broj"] = int(input(f'Unesite broj {i}. osobne iskaznice: '))
+    osobna_iskaznica["prebivaliste"] = input(f'Unesite prebivalište s {i}. osobne iskaznice: ')
+    osobna_iskaznica["oib"] = int(input(f'Unesite oib s {i}. osobne iskaznice: '))
+    osobne_iskaznice.append(osobna_iskaznica)
 
 broj_korisnika = int(input('Unesite broj korisnika: '))
 for i in range(1, broj_korisnika+1):
     korisnik = {}
-    korisnik['ime'] = input(f'Unesite ime {i}. korisnika: ').capitalize()
-    korisnik['prezime'] = input(f'Unesite prezime {i}. korisnika: ').capitalize()
-    korisnik['telefon'] = int(input(f'Unesite telefon {i}. korisnika: '))
-    korisnik['email'] = input(f'Unesite email {i}. korisnika: ').strip()
+    korisnik["ime"] = input(f'Unesite ime {i}. korisnika: ').capitalize()
+    korisnik["prezime"] = input(f'Unesite prezime {i}. korisnika: ').capitalize()
+    korisnik["telefon"] = int(input(f'Unesite telefon {i}. korisnika: '))
+    korisnik["email"] = input(f'Unesite email {i}. korisnika: ').strip()
+    print(f'Odaberite {i}. osobnu iskaznicu: ')
+    for j, osobna_iskaznica in enumerate(osobne_iskaznice, start=1):
+        print(f'\t{j}. {osobna_iskaznica["oib"]}')
+    odabir_osobne = int(input('Odabrana osobna iskaznica: '))
+    korisnik["osobna"] = osobne_iskaznice[odabir_osobne-1]
     korisnici.append(korisnik)
 
 broj_kategorija = int(input('Unesite broj kategorija: '))
 for i in range(1, broj_kategorija+1):
     kategorija = {}
-    kategorija['naziv'] = input(f'Unesite naziv {i}. kategorije: ')
-    kategorija['artikli'] = []
+    kategorija["naziv"] = input(f'Unesite naziv {i}. kategorije: ')
+    kategorija["artikli"] = []
 
     broj_artikala = int(input(f'Unesite broj artikala za {i}. kategoriju: '))
     for j in range(1, broj_artikala+1):
         artikl = {}
-        artikl['naslov'] = input(f'Unesite naslov {j}. artikla: ')
-        artikl['opis'] = input(f'Unesite opis {j}. artikla: ')
-        artikl['cijena'] = float(input(f'Unesite cijenu {j}. artikla: '))
-        kategorija['artikli'].append(artikl)
+        artikl["naslov"] = input(f'Unesite naslov {j}. artikla: ')
+        artikl["opis"] = input(f'Unesite opis {j}. artikla: ')
+        artikl["cijena"] = float(input(f'Unesite cijenu {j}. artikla: '))
+        kategorija["artikli"].append(artikl)
 
     kategorije.append(kategorija)
 
@@ -66,6 +80,7 @@ for i, prodaja in enumerate(prodaje, start=1):
     print(f'\tIme: {prodaja["korisnik"]["prezime"]}')
     print(f'\tTelefon: {prodaja["korisnik"]["telefon"]}')
     print(f'\tEmail: {prodaja["korisnik"]["email"]}')
+    print(f'\tOIB: {prodaja["korisnik"]["osobna"]["oib"]}')
 
     print('Informacije o artiklu: ')
     print(f'\tnaslov: {prodaja["artikl"]["naslov"]}')
