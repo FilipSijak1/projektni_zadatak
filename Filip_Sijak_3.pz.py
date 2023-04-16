@@ -21,7 +21,6 @@ for i in range(1,br_prodaja+1):
     prodaja = unos_prodaje(korisnici, kategorije, i)
     prodaje.append(prodaja)
 
-
-for i,prodaja in enumerate(prodaje, start = 1):
+for i,prodaja in enumerate(prodaje, start=1):
     print(f"Prodaja {i}")
     ispis_prodaje(prodaja)

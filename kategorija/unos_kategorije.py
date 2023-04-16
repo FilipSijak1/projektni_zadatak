@@ -6,7 +6,7 @@ def unos_kategorije(redni_broj):
 
     br_artikala = int(input(f'Unesite broj artikala za {redni_broj}. kategoriju: '))
     for i in range(1, br_artikala + 1):
-        artikl=unos_artikla(i)
+        artikl = unos_artikla(i)
         kategorija['artikli'].append(artikl)
 
     return kategorija
