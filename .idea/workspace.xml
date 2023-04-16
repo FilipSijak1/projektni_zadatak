@@ -7,10 +7,16 @@
     <list default="true" id="bb611124-bb43-48fb-be7b-c74398d5ae55" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Filip_Sijak_3.pz.py" beforeDir="false" afterPath="$PROJECT_DIR$/Filip_Sijak_3.pz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artikl/unos_artikla.py" beforeDir="false" afterPath="$PROJECT_DIR$/artikl/unos_artikla.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kategorija/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/kategorija/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kategorija/ispis_kategorije.py" beforeDir="false" afterPath="$PROJECT_DIR$/kategorija/ispis_kategorije.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kategorija/unos_kategorije.py" beforeDir="false" afterPath="$PROJECT_DIR$/kategorija/unos_kategorije.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/korisnik/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/korisnik/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/korisnik/ispis_korisnika.py" beforeDir="false" afterPath="$PROJECT_DIR$/korisnik/ispis_korisnika.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/korisnik/unos_korisnika.py" beforeDir="false" afterPath="$PROJECT_DIR$/korisnik/unos_korisnika.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prodaja/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/prodaja/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prodaja/ispis_prodaje.py" beforeDir="false" afterPath="$PROJECT_DIR$/prodaja/ispis_prodaje.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prodaja/unos_prodaje.py" beforeDir="false" afterPath="$PROJECT_DIR$/prodaja/unos_prodaje.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telefon/unos_telefona.py" beforeDir="false" afterPath="$PROJECT_DIR$/telefon/unos_telefona.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

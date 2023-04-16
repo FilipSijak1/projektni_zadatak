@@ -1,3 +1,4 @@
+from utilities import unos_pozitivnog_cijelog_broja
 def unos_artikla(redni_broj):
     artikl={}
     artikl['naslov'] = input(f'Unesite naslov {redni_broj}. artikla: ')
