@@ -1,9 +1,9 @@
-from telefon import unos_telefona
+from .Korisnik import Korisnik
+from utilities import unos_telefona
 def unos_korisnika(redni_broj):
-    korisnik={}
-    korisnik['ime'] = input(f'Unesite ime {redni_broj}. korisnika: ').capitalize()
-    korisnik['prezime'] = input(f'Unesite prezime {redni_broj}. korisnika: ').capitalize()
-    korisnik['email'] = input(f'Unesite email {redni_broj}. korisnika: ').strip()
-    korisnik['telefon'] = unos_telefona(redni_broj)
+    ime = input(f'Unesite ime {redni_broj}. korisnika: ').capitalize()
+    prezime = input(f'Unesite prezime {redni_broj}. korisnika: ').capitalize()
+    email = input(f'Unesite email {redni_broj}. korisnika: ').strip()
+    telefon = unos_telefona(f'Unesite telefon {redni_broj}. korisnika: ')
 
-    return korisnik
+    return Korisnik(ime, prezime, email, telefon)

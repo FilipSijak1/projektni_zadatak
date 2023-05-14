@@ -44,3 +44,22 @@ def unos_intervala(min, max):
         else:
             return broj
 
+def unos_telefona(poruka):
+    while True:
+        try:
+            broj = unos_pozitivnog_cijelog_broja(poruka)
+
+            if len(str(broj)) != 8:
+                raise Exception(f'Uneseni broj mora imati 8 znamenaka!')
+        except Exception as e:
+            print(e)
+
+        else:
+            return broj
+
+
+
+
+
+
+
