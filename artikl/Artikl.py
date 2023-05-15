@@ -28,3 +28,9 @@ class Artikl:
     def cijena(self, cijena):
         self.__cijena = cijena
 
+    def ispis(self):
+        print('Informacije o artiklu: ')
+        print(f"\tNaslov: {self.__naslov}")
+        print(f"\tOpis: {self.__opis}")
+        print(f"\tCijena: {self.__cijena}")
+
