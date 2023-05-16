@@ -1,9 +1,12 @@
+from .OsobnaIskaznica import OsobnaIskaznica
 class Korisnik:
-    def __init__(self, ime, prezime, email, telefon):
+    def __init__(self, ime, prezime, email, telefon, osobna):
         self.__ime = ime
         self.__prezime = prezime
         self.__email = email
         self.__telefon = telefon
+        self.osobna = osobna
+
 
     @property
     def ime(self):
@@ -29,9 +32,11 @@ class Korisnik:
     def telefon(self):
         return self.__telefon
 
+
     def ispis(self):
         print("Informacije o korisniku:")
         print(f"\tIme: {self.__ime}")
         print(f"\tPrezime: {self.__prezime}")
         print(f"\tTelefon: {self.__telefon}")
         print(f"\tEmail: {self.__email}")
+        self.osobna.ispis()
