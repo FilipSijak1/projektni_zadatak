@@ -1,4 +1,4 @@
-from .OsobnaIskaznica import OsobnaIskaznica
+
 class Korisnik:
     def __init__(self, ime, prezime, email, telefon, osobna):
         self.__ime = ime
