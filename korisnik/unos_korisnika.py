@@ -1,13 +1,29 @@
-from .Korisnik import Korisnik
-from utilities import unos_telefona
-from .unos_osobne import unos_osobne
+
+from utilities import unos_telefona, unos_intervala
+from .PrivatniKorisnik import PrivatniKorisnik
+from .PoslovniKorisnik import PoslovniKorisnik
+
 def unos_korisnika(redni_broj):
-    ime = input(f'Unesite ime {redni_broj}. korisnika: ').capitalize()
-    prezime = input(f'Unesite prezime {redni_broj}. korisnika: ').capitalize()
+
     email = input(f'Unesite email {redni_broj}. korisnika: ').strip()
     telefon = unos_telefona(f'Unesite telefon {redni_broj}. korisnika: ')
-    osobna = unos_osobne(redni_broj)
-    return Korisnik(ime, prezime, email, telefon, osobna)
+
+    print('Tipovi korisnika:')
+    print('\t 1. Poslovni korisnik')
+    print('\t 2. Privatni korisnik')
+    tip = unos_intervala(1, 2)
+
+    if tip == 1:
+        naziv = input(f'Unesite naziv {redni_broj}. korisnika: ')
+        web = input(f'Unesite web stranicu {redni_broj}. korisnika: ')
+
+        return PoslovniKorisnik(naziv, web, telefon, email)
+
+    elif tip == 2:
+        ime = input(f'Unesite ime {redni_broj}. korisnika: ').capitalize()
+        prezime = input(f'Unesite prezime {redni_broj}. korisnika: ').capitalize()
+
+        return PrivatniKorisnik(ime, prezime, telefon, email)
 
 
 

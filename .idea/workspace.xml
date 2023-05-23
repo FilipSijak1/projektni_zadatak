@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb611124-bb43-48fb-be7b-c74398d5ae55" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artikl/Artikl.py" beforeDir="false" afterPath="$PROJECT_DIR$/artikl/Artikl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artikl/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/artikl/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artikl/unos_artikla.py" beforeDir="false" afterPath="$PROJECT_DIR$/artikl/unos_artikla.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/korisnik/Korisnik.py" beforeDir="false" afterPath="$PROJECT_DIR$/korisnik/Korisnik.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/korisnik/OsobnaIskaznica.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/korisnik/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/korisnik/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/korisnik/ispis_korisnika.py" beforeDir="false" afterPath="$PROJECT_DIR$/korisnik/ispis_korisnika.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/korisnik/unos_korisnika.py" beforeDir="false" afterPath="$PROJECT_DIR$/korisnik/unos_korisnika.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/korisnik/unos_osobne.py" beforeDir="false" afterPath="$PROJECT_DIR$/korisnik/unos_osobne.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/korisnik/unos_osobne.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
